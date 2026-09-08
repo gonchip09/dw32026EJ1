@@ -23,7 +23,8 @@
                 <a class="back-link" href="index.html">&larr; Volver a la historia de Git</a>
             </div>
 
-            <form class="contact-form" action="#" method="POST" netlify>
+            <form class="contact-form" name="preguntas-git" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="preguntas-git">
                 <div class="form-field">
                     <label for="nombre">Nombre</label>
                     <input type="text" id="nombre" name="nombre" autocomplete="name" required>

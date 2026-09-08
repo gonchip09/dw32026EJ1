@@ -34,6 +34,4 @@ form.addEventListener('submit', (event) => {
         return;
     }
 
-    event.preventDefault();
-    formStatus.textContent = 'Gracias por tu pregunta. Te responderemos pronto.';
 });
