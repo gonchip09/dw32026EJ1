@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Envía tus preguntas sobre Git.">
+    <title>Preguntas sobre Git</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <p class="eyebrow">Conversaciones sobre control de versiones</p>
+        <h1>Preguntas sobre Git</h1>
+        <p>Comparte tu duda y pensemos juntos la mejor forma de trabajar con Git.</p>
+    </header>
+
+    <main>
+        <section class="contact-layout" aria-labelledby="contact-title">
+            <div class="contact-copy">
+                <p class="eyebrow">Contacto</p>
+                <h2 id="contact-title">¿En qué podemos ayudarte?</h2>
+                <p>Pregunta sobre commits, ramas, merges, repositorios remotos o cualquier otro concepto de Git.</p>
+                <a class="back-link" href="index.html">&larr; Volver a la historia de Git</a>
+            </div>
+
+            <form class="contact-form" action="#" method="post">
+                <div class="form-field">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-help email-status">
+                    <small id="email-help">Usaremos este correo para responderte.</small>
+                    <small id="email-status" class="field-status" aria-live="polite"></small>
+                </div>
+
+                <div class="form-field">
+                    <label for="pregunta">Tu pregunta</label>
+                    <textarea id="pregunta" name="pregunta" rows="6" required></textarea>
+                </div>
+
+                <button type="submit">Enviar pregunta</button>
+                <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>La historia continúa con cada commit.</footer>
+
+    <script src="contacto.js" defer></script>
+</body>
+</html>
